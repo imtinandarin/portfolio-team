@@ -17,7 +17,7 @@ function Mayla() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100 flex justify-center px-6 py-10 relative overflow-hidden">
 
-      {/* GLOW BACKGROUND INTERAKTIF (HALUS) */}
+      {/* GLOW */}
       <div
         className="pointer-events-none fixed w-[400px] h-[400px] rounded-full bg-pink-300/20 blur-[120px] z-0 transition duration-300"
         style={{
@@ -41,6 +41,7 @@ function Mayla() {
 
             <img
               src="/MaylaProfil.png"
+              alt="Mayla Tahmida"
               className="relative w-28 h-28 rounded-full object-cover object-[50%_20%] border-4 border-white shadow-lg group-hover:scale-105 transition"
             />
           </div>
@@ -55,10 +56,12 @@ function Mayla() {
               Web Development Learner • UI/UX Basics
             </p>
 
-            {/* TAG */}
             <div className="flex gap-2 mt-3 flex-wrap">
               {["Basic Web Development", "UI/UX Fundamentals", "Problem Solving"].map((item) => (
-                <span className="px-3 py-1 text-xs bg-white/70 rounded-full shadow hover:scale-105 hover:bg-pink-100 transition">
+                <span
+                  key={item}
+                  className="px-3 py-1 text-xs bg-white/70 rounded-full shadow hover:scale-105 hover:bg-pink-100 transition"
+                >
                   {item}
                 </span>
               ))}
@@ -68,7 +71,6 @@ function Mayla() {
 
         {/* ABOUT */}
         <div className="bg-white/60 backdrop-blur-xl p-6 rounded-3xl shadow border border-white/40 hover:shadow-purple-200 transition duration-300">
-
           <p className="text-xs text-purple-500 mb-2 tracking-widest">
             TENTANG DIRI
           </p>
@@ -86,7 +88,10 @@ function Mayla() {
             ["Domisili", "Kota Malang"],
             ["Fokus", "Web & UI/UX"],
           ].map(([label, value]) => (
-            <div className="bg-white/60 backdrop-blur-xl p-4 rounded-xl shadow hover:-translate-y-1 hover:shadow-pink-200 transition duration-300">
+            <div
+              key={label}
+              className="bg-white/60 backdrop-blur-xl p-4 rounded-xl shadow hover:-translate-y-1 hover:shadow-pink-200 transition duration-300"
+            >
               <p className="text-xs text-gray-500">{label}</p>
               <p className="font-semibold text-gray-700">{value}</p>
             </div>
@@ -96,13 +101,22 @@ function Mayla() {
         {/* PORTFOLIO */}
         <div className="grid md:grid-cols-3 gap-4">
           {[
-            ["Techfair Volume 2", "Dokumentasi Foto"],
-            ["Poster Creanomic", "Desain Poster"],
-            ["Poster Dies Natalis", "Desain Poster"],
-          ].map(([title, desc]) => (
-            <div className="bg-white/60 backdrop-blur-xl rounded-2xl overflow-hidden shadow hover:scale-[1.04] hover:shadow-pink-200 transition duration-300">
+            ["Techfair Volume 2", "Dokumentasi Foto", "/DokumTechfairVol2.png"],
+            ["Poster Creanomic", "Desain Poster", "/DpCrea.png"],
+            ["Poster Dies Natalis", "Desain Poster", "/DpULM.png"],
+          ].map(([title, desc, image]) => (
+            <div
+              key={title}
+              className="bg-white/60 backdrop-blur-xl rounded-2xl overflow-hidden shadow hover:scale-[1.04] hover:shadow-pink-200 transition duration-300"
+            >
 
-              <div className="h-40 bg-gradient-to-br from-pink-200 via-purple-200 to-indigo-200"></div>
+              <div className="h-40 w-full overflow-hidden relative group">
+                <img
+                  src={image}
+                  alt={title}
+                  className="w-full h-full object-cover transition-all duration-500 group-hover:object-contain group-hover:scale-110 bg-white"
+                />
+              </div>
 
               <div className="p-3">
                 <p className="text-sm font-semibold">{title}</p>

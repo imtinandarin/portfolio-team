@@ -17,7 +17,7 @@ function Home() {
     className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition text-center"
   >
     <h2 className="text-xl font-semibold mb-2">Darin</h2>
-    <p className="text-gray-500">Frontend Developer</p>
+    <p className="text-gray-500">UI Designer</p>
   </Link>
 
   <Link 
@@ -25,7 +25,7 @@ function Home() {
     className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition text-center"
   >
     <h2 className="text-xl font-semibold mb-2">Jace</h2>
-    <p className="text-gray-500">UI Designer</p>
+    <p className="text-gray-500">Backend Developer</p>
   </Link>
 
   <Link 
@@ -33,7 +33,7 @@ function Home() {
     className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition text-center"
   >
     <h2 className="text-xl font-semibold mb-2">Mayla</h2>
-    <p className="text-gray-500">Backend Developer</p>
+    <p className="text-gray-500">Frontend Developer</p>
   </Link>
 
 </div>

@@ -5,19 +5,23 @@ import lookism from "../assets/lookism.jpg";
 
 const dataJace = {
   name: "Jace Russell",
-  class: "T2A Class (sori kalau awk jago)",
-  major: "TI JAYA JAYA JAYA",
-  university: "Universitas Brawijaya",
+  class: "T2A Class",
+  major: "Information Technology",
+  university: "Brawijaya University",
   domicile: "Malang, Jawa Timur",
   year: "2025",
   photo: "",
 
-  about: `hlo gys aku mahasiswi ti (engineering diva) yg memamg love hate demngan 
-  coding atw bhsa formalna web development dan suka ngedit di figma. aku suka 
-  dubaicuwicuki karena dy teksturna samngat lembut awk suka wee. slain it aku suka 
-  nonyon film, mndengarkan mucik, dan main gim brsama my teman gue saya aku. ni 
-  project aku brsama my tiga trio alias jace darin mayla (klp hbaatt). 
-  aku jga suka ecamm`,
+  about: `Halo! Aku adalah mahasiswa Teknik Informatika yang passionate di 
+  bidang web development dan desain UI/UX. Aku suka banget eksplorasi 
+  teknologi baru dan senang bikin hal-hal yang bisa bermanfaat buat orang 
+  banyak. Di luar coding, aku juga suka nonton film, dengerin musik, dan 
+  main game bareng teman-teman. Menurutku, kreativitas dan logika bisa 
+  berjalan berdampingan dan justru menghasilkan karya yang lebih keren. 
+  Saat ini sedang belajar ReactJS, Tailwind CSS, dan berbagai tools modern 
+  lainnya untuk mengembangkan skill sebagai full-stack developer. Aku percaya 
+  bahwa setiap baris kode yang ditulis dengan niat baik bisa membawa dampak 
+  positif yang nyata.`,
 
   skills: [
     { 

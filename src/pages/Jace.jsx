@@ -102,14 +102,12 @@ const portfolio = [
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-teal-50">
-      {/* Decorative blobs */}
       <div className="fixed top-0 left-0 w-96 h-96 bg-purple-200/40 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
       <div className="fixed bottom-0 right-0 w-96 h-96 bg-pink-200/40 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 pointer-events-none" />
       <div className="fixed top-1/2 right-0 w-64 h-64 bg-teal-200/30 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-lg mx-auto px-4 py-8">
 
-        {/* HERO CARD */}
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl border border-white/60 shadow-md p-6 mb-4 text-center overflow-hidden relative">
           <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-r from-purple-200 via-pink-200 to-teal-200 opacity-60" />
 
@@ -142,8 +140,7 @@ const portfolio = [
             </span>
           </div>
 
-          {/* Social Links */}
-          <div className="flex justify-center gap-3 mt-4">
+         <div className="flex justify-center gap-3 mt-4">
             {d.social.github && (
               <a href={d.social.github} target="_blank" rel="noreferrer"
                 className="text-xs bg-slate-100 hover:bg-slate-200 text-slate-600 px-4 py-1.5 rounded-full font-medium transition-colors">
@@ -171,7 +168,6 @@ const portfolio = [
           </div>
         </div>
 
-{/* TABS */}
 <div className="flex bg-white/70 backdrop-blur-sm rounded-2xl border border-white/60 p-1 mb-4 gap-1">
   {tabs.map((tab) => (
     <button
@@ -188,25 +184,22 @@ const portfolio = [
   ))}
 </div>
 
-        {/* TAB: ABOUT */}
         {activeTab === "about" && (
-          <SectionCard title="tentang diri">
+          <SectionCard title="about me">
             <p className="text-sm text-slate-600 leading-relaxed">{d.about}</p>
           </SectionCard>
         )}
 
-        {/* TAB: SKILLS */}
         {activeTab === "skills" && (
-          <SectionCard title="skills & teknologi">
+          <SectionCard title="skills">
             {d.skills.map((skill) => (
               <SkillBar key={skill.name} skill={skill} />
             ))}
           </SectionCard>
         )}
 
-        {/* TAB: PORTFOLIO */}
         {activeTab === "portfolio" && (
-          <SectionCard title="portfolio uiux">
+          <SectionCard title="portfolio ui/ux">
             <div className="grid grid-cols-2 gap-3">
               {portfolio.map((item) => (
                 <PortfolioCard key={item.title} item={item} />
@@ -215,7 +208,6 @@ const portfolio = [
           </SectionCard>
         )}
 
-        {/* TAB: FUN STUFF */}
         {activeTab === "fun" && (
           <>
             <SectionCard title="likes & dislikes">
